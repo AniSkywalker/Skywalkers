@@ -28,7 +28,9 @@ Our mission is to bring balance to your portfolio — not leave it at the mercy 
 - Don’t see your favourite asset? Ask, and it shall be summoned like Force lightning
 
 # Donations
-You can donate here: 
+Love what we’re building? Help fuel our X-Wing engines and keep the signals flying:
+
+You can donate here: https://buy.stripe.com/8x2dR9cqN3ci5x6dI0eAg00
 
 ## Contact
 May the trends be ever in your favour.
