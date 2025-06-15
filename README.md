@@ -24,8 +24,12 @@ Our mission is to bring balance to your portfolio — not leave it at the mercy 
 ## Pre-requisits
 - A Slack account
 
+## 🚨 Notice 🚨
+**Posting a message is only allowed in \#random channels. Posting comments in any other channels is prohibited as it will disrupt the automation of others**. 
+> Posting comments on any other channels (example: \#short-wave-transmissions or \#simulated-profits) will disrupt automated trading and will result in a ban from the Slack workspace. Please respect the guidelines and treat these channels as read-only channels.
+
 ## Requesting new stocks
-- Don’t see your favourite asset? Ask, and it shall be summoned like Force lightning
+- Don’t see your favourite asset? Ask in \#random channel, and it shall be summoned like Force lightning
 
 ## Join the rebellion!
 - Send an email to arghyaonline@gmail.com
