@@ -1,5 +1,5 @@
 # Skywalkers
-Masters of the $${\color{green}Buy}$$ Side, Guardians of the $${\color{red}Sell}$$!
+Masters of the **Buy** Side, Guardians of the **Sell**!
 
 ## Description
 Welcome to Skywalkers! Here, the Force isn’t just strong — it’s algorithmic.
@@ -30,7 +30,7 @@ Our mission is to bring balance to your portfolio — not leave it at the mercy 
 ## Join the rebellion!
 - Send an email to arghyaonline@gmail.com
 
-# Donate to the rebellion:
+## Donate to the rebellion:
 https://buy.stripe.com/8x2dR9cqN3ci5x6dI0eAg00 (monthly donations)
 
 Or
