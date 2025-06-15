@@ -30,7 +30,9 @@ Our mission is to bring balance to your portfolio — not leave it at the mercy 
 # Donations
 Love what we’re building? Help fuel our X-Wing engines and keep the signals flying:
 
-You can donate here: https://buy.stripe.com/8x2dR9cqN3ci5x6dI0eAg00
+You can set up a monthly donation here: https://buy.stripe.com/8x2dR9cqN3ci5x6dI0eAg00
+Or
+You can buy me a coffee: https://coff.ee/aniskywalker
 
 ## Contact
 May the trends be ever in your favour.
