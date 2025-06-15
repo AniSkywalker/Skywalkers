@@ -34,7 +34,7 @@ You can set up a monthly donation here: https://buy.stripe.com/8x2dR9cqN3ci5x6dI
 
 Or
 
-You can buy me a coffee: https://coff.ee/aniskywalker
+You can buy me coffees: https://coff.ee/aniskywalker
 
 ## Contact
 May the trends be ever in your favour.
