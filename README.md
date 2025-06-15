@@ -29,3 +29,7 @@ Our mission is to bring balance to your portfolio — not leave it at the mercy 
 
 # Donations
 You can donate here: 
+
+## Contact
+May the trends be ever in your favour.
+~ Team Skywalkers (+447974597024)
