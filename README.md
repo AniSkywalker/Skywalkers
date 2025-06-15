@@ -1,12 +1,12 @@
 # Skywalkers
-Masters of the Buy Side, Guardians of the Sell!
+Masters of the $${\color{green}Buy}$$ Side, Guardians of the $${\color{red}Sell}$$!
 
 ## Description
 Welcome to Skywalkers! Here, the Force isn’t just strong — it’s algorithmic.
 
 Tired of feeling like a moisture farmer on Tatooine every time the market dips? Fear not. In a galaxy full of volatility, Skywalkers helps traders and investors navigate the stock market with confidence.
 
-Built by data droids, tested by Wookiees (don’t ask), and guided by Jedi Master-level quant nerds, Skywalkers is your new hope for navigating the galactic mess of financial markets.
+Built by data droids 🤖, tested by Wookiees (don’t ask), and guided by Jedi Master-level quant nerds 🤔, Skywalkers is your new hope for navigating the galactic mess of financial markets.
 
 Trade smart. Trade strong. And may the gains be with you.
 
