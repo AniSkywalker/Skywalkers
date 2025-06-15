@@ -27,8 +27,10 @@ Our mission is to bring balance to your portfolio — not leave it at the mercy 
 ## Requesting new stocks
 - Don’t see your favourite asset? Ask, and it shall be summoned like Force lightning
 
-# Donate to the rebellion: 
+## Join the rebellion!
+- Send an email to arghyaonline@gmail.com
 
+# Donate to the rebellion:
 https://buy.stripe.com/8x2dR9cqN3ci5x6dI0eAg00 (monthly donations)
 
 Or
@@ -40,16 +42,17 @@ Not everyone needs to fight like a Sith. Some prefer the calm discipline of a Je
 
 Here’s a trading tip for those who move with patience and purpose:
 
-Divide your capital based on the number of peak signals identified in the weekly analysis for each stock.
-
-This way, you’re not swinging at every lightsaber flash — you’re allocating wisely, one high-probability move at a time. Less drama, more discipline. A true Jedi does not overtrade.
-
-Remember, A true Jedi doesn’t YOLO.
+> Divide your capital based on the number of peak signals identified in the weekly analysis for each stock.
+> This way, you’re not swinging at every lightsaber flash — you’re allocating wisely, one high-probability move at a time. Less drama, more discipline. A true Jedi does not overtrade.
+> Remember, A true Jedi doesn’t YOLO.
 
 ## ⚠️ Disclaimer: This Is Not Financial Advice
 Skywalkers is a project for experimental purposes only.
-The suggestions provided here are not financial advice, investment recommendations, or instructions from the Jedi Council.
-Always do your own research, consult with a licensed financial advisor, and remember: even the best trader in the galaxy can’t predict the future with 100% certainty.
+> The suggestions provided here are not financial advice, investment recommendations, or instructions from the Jedi Council.
+> Always do your own research, consult with a licensed financial advisor, and remember: even the best trader in the galaxy can’t predict the future with 100% certainty.
+
+No affiliation with Lucasfilm or Star Wars.
+> This project is an independent, fan-inspired effort. We are not affiliated with, endorsed by, or connected to Lucasfilm Ltd., Disney, or any official Star Wars entity. All trademarks, references, and characters are the property of their respective owners. We just love the galaxy far, far away.
 
 Use the Force — wisely.
 
