@@ -24,9 +24,49 @@ Our mission is to bring balance to your portfolio — not leave it at the mercy 
 ## Pre-requisits
 - A Slack account
 
+## Journey to Coruscant
+Greetings, young Padawan.  
+To wield the full power of **skywalk.py**, you must first prepare your training grounds and channel the Force through the proper configurations. Follow these sacred steps carefully…
+
+---
+
+### ✨ **1. Install the Tools of the Jedi (Anaconda)**  
+Before you can walk the Skywalker path, you must obtain the recent distribution known as **Anaconda**:  
+🔗 https://www.anaconda.com/download  
+
+Download it. Install it. Let it become one with your system.
+
+---
+
+### 🛠️ **2. Forge a New Conda Environment**  
+Every Jedi must craft their own environment. Yours shall be known as **skywalkers**, forged in the fires of Python 3.11:
+
+```
+conda create -n skywalkers python=3.11
+```
+
+### 🧘 3. Awaken the Environment
+```
+conda activate skywalkers
+```
+
+### 🔑 4. Configure Your Holocrons (Slack Keys)
+To communicate across the galaxy (i.e., Slack), prepare your encrypted holocrons:
+* Place your Slack client authentication key into ```keys.json```.
+* Store your channel ID within ```slack_channels.json```.
+
+Treat them with the respect granted to all Jedi artifacts.
+
+### 🚀 5. Execute the Skywalker Protocol
+At last, it is time. Summon your clone commander and begin the mission:
+```
+python skywalk.py --clones REX --keys-file keys.json
+```
+
+
 ## 🚨 Notice 🚨
 **Posting a message is only allowed in \#random channels. Posting comments in any other channels is prohibited as it will disrupt the automation of others**. 
-> Posting comments on any other channels (example: \#short-wave-transmissions or \#simulated-profits) will disrupt automated trading and will result in a ban from the Slack workspace. Please respect the guidelines and treat these channels as read-only channels.
+> Posting comments on any other channels (example: \#incoming-transmissions or \#short-wave-transmissions) will disrupt automated trading and will result in a ban from the Slack workspace. Please respect the guidelines and treat these channels as read-only channels.
 
 ## Requesting new stocks
 - Don’t see your favourite asset? Ask in \#random channel, and it shall be summoned like Force lightning
@@ -55,9 +95,6 @@ No affiliation with Lucasfilm or Star Wars.
 > This project is an independent, fan-inspired effort. We are not affiliated with, endorsed by, or connected to Lucasfilm Ltd., Disney, or any official Star Wars entity. All trademarks, references, and characters are the property of their respective owners. We just love the galaxy far, far away.
 
 Use the Force — wisely.
-
-
-
 
 
 ## Contact
