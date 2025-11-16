@@ -62,4 +62,4 @@ Use the Force — wisely.
 
 ## Contact
 May the trends be ever in your favour.
-~ Team Skywalkers (+447974597024)
+~ Team Skywalkers
