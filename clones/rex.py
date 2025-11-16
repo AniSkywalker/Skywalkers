@@ -2,7 +2,7 @@ import sys
 import time
 import logging
 from logging import FileHandler
-from pathlib import Path
+
 
 import schedule
 
@@ -42,9 +42,7 @@ class REX(Clone):
         self.communicator = communicator
         self.navigator = navigator
         self.allowed_stocks = load_allowed_stocks(stocks_file_name=stock_file)
-        self.channel_dict = load_slack_channels(
-            slack_channels_file_name=slack_channels_file
-        )
+        self.channel_dict = load_slack_channels(slack_channels_file_name=slack_channels_file)
         self.buy_sell_pending_trades = {
             key: {BUY: [], SELL: []} for key in self.allowed_stocks.keys()
         }
@@ -82,9 +80,7 @@ class REX(Clone):
                 channel=self.channel_dict["short-wave-transmissions"]
             )
             if message is not None:
-                signals = self.parse_message(
-                    message, f"{local_time_hour}_{local_time_min}_0"
-                )
+                signals = self.parse_message(message, f"{local_time_hour}_{local_time_min}_0")
 
                 for signal in signals:
                     if signal["Symbol"] in self.allowed_stocks.keys():
@@ -92,31 +88,24 @@ class REX(Clone):
                             "allow_trailing_stop"
                         ]
                         if signal["Decision"] == MAY_BUY:
-                            if (
-                                allow_trailing_stop
-                                and signal["trailing_stop_enable"] == True
-                            ):
+                            if allow_trailing_stop and signal["trailing_stop_enable"] == True:
 
                                 if (
-                                    self.buy_sell_pending_trades[signal["Symbol"]][BUY][
-                                        -1
-                                    ]
+                                    self.buy_sell_pending_trades[signal["Symbol"]][BUY][-1]
                                     > signal["price"]
                                 ):
-                                    self.buy_sell_pending_trades[signal["Symbol"]][
-                                        BUY
-                                    ].append(signal["Price"])
-                                    self.buy_sell_pending_trades[signal["Symbol"]][
-                                        BUY
-                                    ].pop(0)
+                                    self.buy_sell_pending_trades[signal["Symbol"]][BUY].append(
+                                        signal["Price"]
+                                    )
+                                    self.buy_sell_pending_trades[signal["Symbol"]][BUY].pop(0)
                                 print(
                                     f'Current pending buy trade for {signal["Symbol"]}: {self.buy_sell_pending_trades[signal["Symbol"]][BUY]}'
                                 )
                         if signal["Decision"] == BUY:
                             if allow_trailing_stop:
-                                self.buy_sell_pending_trades[signal["Symbol"]][
-                                    BUY
-                                ].append(signal["Price"])
+                                self.buy_sell_pending_trades[signal["Symbol"]][BUY].append(
+                                    signal["Price"]
+                                )
                                 print(
                                     f'Current pending buy trade for {signal["Symbol"]}: {self.buy_sell_pending_trades[signal["Symbol"]][BUY]}'
                                 )
@@ -124,38 +113,29 @@ class REX(Clone):
                                 self.navigator.buy_stock(
                                     symbol=signal["Symbol"],
                                     price=signal["Price"],
-                                    amount=self.allowed_stocks[signal["Symbol"]][
-                                        "amount"
-                                    ],
+                                    amount=self.allowed_stocks[signal["Symbol"]]["amount"],
                                 )
 
                         if signal["Decision"] == MAY_SELL:
-                            if (
-                                allow_trailing_stop
-                                and signal["trailing_stop_enable"] == True
-                            ):
+                            if allow_trailing_stop and signal["trailing_stop_enable"] == True:
 
                                 if (
-                                    self.buy_sell_pending_trades[signal["Symbol"]][BUY][
-                                        -1
-                                    ]
+                                    self.buy_sell_pending_trades[signal["Symbol"]][BUY][-1]
                                     < signal["price"]
                                 ):
-                                    self.buy_sell_pending_trades[signal["Symbol"]][
-                                        SELL
-                                    ].append(signal["Price"])
-                                    self.buy_sell_pending_trades[signal["Symbol"]][
-                                        SELL
-                                    ].pop(0)
+                                    self.buy_sell_pending_trades[signal["Symbol"]][SELL].append(
+                                        signal["Price"]
+                                    )
+                                    self.buy_sell_pending_trades[signal["Symbol"]][SELL].pop(0)
                                 print(
                                     f'Current pending sell trade for {signal["Symbol"]}: {self.buy_sell_pending_trades[signal["Symbol"]][SELL]}'
                                 )
 
                         if signal["Decision"] == SELL:
                             if allow_trailing_stop:
-                                self.buy_sell_pending_trades[signal["Symbol"]][
-                                    SELL
-                                ].append(signal["Price"])
+                                self.buy_sell_pending_trades[signal["Symbol"]][SELL].append(
+                                    signal["Price"]
+                                )
                                 print(
                                     f'Current pending sell trade for {signal["Symbol"]}: {self.buy_sell_pending_trades[signal["Symbol"]][SELL]}'
                                 )
@@ -163,9 +143,7 @@ class REX(Clone):
                                 self.navigator.sell_stock(
                                     symbol=signal["Symbol"],
                                     price=signal["Price"],
-                                    amount=self.allowed_stocks[signal["Symbol"]][
-                                        "amount"
-                                    ],
+                                    amount=self.allowed_stocks[signal["Symbol"]]["amount"],
                                 )
 
                         # trailing stop execute when average buy price is below the current price or average sell price is higher the current price
@@ -180,9 +158,7 @@ class REX(Clone):
                             if signal["trailing_stop_enable"]:
                                 if len(current_buy_pending_trades):
                                     buy_average_price = sum(
-                                        list(map(float, current_buy_pending_trades))[
-                                            -2:
-                                        ]
+                                        list(map(float, current_buy_pending_trades))[-2:]
                                     ) / len(current_buy_pending_trades[-2:])
 
                                     if buy_average_price < float(signal["Price"]):
@@ -194,9 +170,7 @@ class REX(Clone):
 
                                 if len(current_sell_pending_trades):
                                     sell_average_price = sum(
-                                        list(map(float, current_sell_pending_trades))[
-                                            -2:
-                                        ]
+                                        list(map(float, current_sell_pending_trades))[-2:]
                                     ) / len(current_sell_pending_trades[-2:])
                                     if sell_average_price > float(signal["Price"]):
                                         print(
@@ -215,13 +189,9 @@ class REX(Clone):
                                         self.navigator.buy_stock(
                                             symbol=signal["Symbol"],
                                             price=signal["Price"],
-                                            amount=self.allowed_stocks[
-                                                signal["Symbol"]
-                                            ]["amount"],
+                                            amount=self.allowed_stocks[signal["Symbol"]]["amount"],
                                         )
-                                    self.buy_sell_pending_trades[signal["Symbol"]][
-                                        BUY
-                                    ] = []
+                                    self.buy_sell_pending_trades[signal["Symbol"]][BUY] = []
 
                                 if len(current_sell_pending_trades) > 0:
                                     print(
@@ -231,20 +201,14 @@ class REX(Clone):
                                         self.navigator.sell_stock(
                                             symbol=signal["Symbol"],
                                             price=signal["Price"],
-                                            amount=self.allowed_stocks[
-                                                signal["Symbol"]
-                                            ]["amount"],
+                                            amount=self.allowed_stocks[signal["Symbol"]]["amount"],
                                         )
-                                    self.buy_sell_pending_trades[signal["Symbol"]][
-                                        SELL
-                                    ] = []
+                                    self.buy_sell_pending_trades[signal["Symbol"]][SELL] = []
 
                         # consolidated trading
                         if (
                             signal["Decision"] == CONSOLIDATED_TRADING
-                            and self.allowed_stocks[signal["Symbol"]][
-                                "allow_consolidated_trading"
-                            ]
+                            and self.allowed_stocks[signal["Symbol"]]["allow_consolidated_trading"]
                         ):
                             amount = (
                                 self.allowed_stocks[signal["Symbol"]]["amount"]
@@ -272,9 +236,7 @@ class REX(Clone):
                                 amount=amount,
                             )
                     else:
-                        print(
-                            f"Skipped {signal['Symbol']} @ {local_time_hour}_{local_time_min}_0"
-                        )
+                        print(f"Skipped {signal['Symbol']} @ {local_time_hour}_{local_time_min}_0")
             else:
                 print(f"Error in reading message from Slack")
             self.navigator.refresh_page()
