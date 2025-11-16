@@ -1,0 +1,8 @@
+{
+  "slack_auth_token": "set_your_key",
+  "stock_file": "stocks.json",
+  "slack_channel_file": "slack_channels.json"
+}
+
+
+

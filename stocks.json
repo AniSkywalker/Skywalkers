@@ -1,0 +1,3 @@
+{
+  "TSLA_US_EQ": {"amount": 1, "allow_consolidated_trading": false, "consolidated_trading_multiplier": 1, "allow_trailing_stop": true}
+}

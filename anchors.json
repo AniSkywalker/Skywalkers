@@ -1,0 +1,54 @@
+{
+    "NVDA_US_EQ": {
+        "x": 640,
+        "y": 780
+    },
+    "TSLA_US_EQ": {
+        "x": 640,
+        "y": 900
+    },
+    "portfolio": {
+        "x": 780,
+        "y": 130
+    },
+    "sell_button": {
+        "x": 800,
+        "y": 260
+    },
+    "buy_button": {
+        "x": 880,
+        "y": 260
+    },
+    "market_button": {
+        "x": 760,
+        "y": 440
+    },
+    "limit_button": {
+        "x": 800,
+        "y": 440
+    },
+    "price": {
+        "x": 840,
+        "y": 596
+    },
+    "amount": {
+        "x": 840,
+        "y": 500
+    },
+    "review_order_button": {
+        "x": 840,
+        "y": 710
+    },
+    "send_order_button": {
+        "x": 840,
+        "y": 688
+    },
+    "order_placed_ok_button": {
+        "x": 840,
+        "y": 688
+    },
+    "page_refresh": {
+        "x": 94,
+        "y": 87
+    }
+}
