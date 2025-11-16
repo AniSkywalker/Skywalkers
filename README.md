@@ -35,11 +35,7 @@ Our mission is to bring balance to your portfolio — not leave it at the mercy 
 - Send an email to arghyaonline@gmail.com
 
 ## Donate to the rebellion:
-https://buy.stripe.com/8x2dR9cqN3ci5x6dI0eAg00 (monthly donations)
-
-Or
-
-https://coff.ee/aniskywalker
+https://buymeacoffee.com/aniskywalker
 
 ## 🧘‍♂️ Pro Tip:
 Not everyone needs to fight like a Sith. Some prefer the calm discipline of a Jedi Master.
