@@ -28,15 +28,11 @@ Our mission is to bring balance to your portfolio — not leave it at the mercy 
 Greetings, young Padawan.  
 To wield the full power of **skywalk.py**, you must first prepare your training grounds and channel the Force through the proper configurations. Follow these sacred steps carefully…
 
----
-
 ### ✨ **1. Install the Tools of the Jedi (Anaconda)**  
 Before you can walk the Skywalker path, you must obtain the recent distribution known as **Anaconda**:  
 🔗 https://www.anaconda.com/download  
 
 Download it. Install it. Let it become one with your system.
-
----
 
 ### 🛠️ **2. Forge a New Conda Environment**  
 Every Jedi must craft their own environment. Yours shall be known as **skywalkers**, forged in the fires of Python 3.11:
